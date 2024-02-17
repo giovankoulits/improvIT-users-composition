@@ -1,0 +1,14 @@
+#user__details {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding-top: 60px;
+}
+#user__details h2 {
+  color: #00a4e4;
+}
+
+#user__details h1:hover {
+  cursor: pointer;
+  color: #00a4e4;
+}
