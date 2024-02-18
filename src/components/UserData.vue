@@ -17,7 +17,9 @@
         <p>{{ props.user.address.zipcode }}, {{ props.user.address.city }}</p>
         <h3>
           <div v-if="user">
-            <button class="user-btn" type="button" @click="gotToUserDetails">See more</button>
+            <button class="user-btn" type="button" @click="gotToUserDetails">
+              {{ $t('see-more') }}
+            </button>
           </div>
         </h3>
       </div>
@@ -27,7 +29,7 @@
 
 <script setup>
 import '../assets/styles/user-data.css'
-import { ref, defineProps } from 'vue'
+import { ref } from 'vue'
 import router from '@/router'
 const props = defineProps(['user'])
 const open = ref(false)

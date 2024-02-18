@@ -6,7 +6,7 @@
         <a href="/">
           <img src="../assets/images/logo.png" alt="Logo" />
         </a>
-        <h1>Team Members</h1>
+        <h1>{{ $t('members') }}</h1>
       </div>
     </nav>
   </section>
